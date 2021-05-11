@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    경기도
+{% endblock %}
+
+{% block main %}
+    <form action="/경기도" method="post">
+        <div class="form-group">
+            <select class="form-control" name="경기도">
+                <option value="">시군구명</option>
+                {% for i in 경기도 %}
+                    <option>{{ i.시군구명 }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button type="submit">검색</button>
+    </form>
+    <div class="result-container">
+        <table class="result">
+            <thead>
+                <tr>
+                    <th>도서관명</th>
+                    <th>주소</th>
+                    <th>휴관일</th>
+                    <th>대출가능권수</th>
+                    <th>대출가능일수</th>
+                    <th>홈페이지</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in selectedLibrary %}
+                <tr>
+                    <td>{{ i.도서관명 }}</td>
+                    <td>{{ i.소재지도로명주소 }}</td>
+                    <td>{{ i.휴관일 }}</td>
+                    <td>{{ i.대출가능권수 }}</td>
+                    <td>{{ i.대출가능일수 }}</td>
+                    {% if (i.홈페이지주소 == NULL) or (i.홈페이지주소 == "없음") or (i.홈페이지주소 == None) %}
+                    <td></td>
+                    {% else %}
+                    <td><a href="{{ i.홈페이지주소 }}" target="_blank">바로가기</a></td>
+                    {% endif %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

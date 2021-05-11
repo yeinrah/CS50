@@ -1,0 +1,102 @@
+html {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #618685;
+    font-weight: bold;
+}
+
+.navbar-container {
+    background-color: #80ced6;
+    margin: 0;
+}
+
+.navbar {
+    display: inline;
+    position: fixed;
+    text-align: left;
+}
+
+li {
+    list-style: none;
+    font-size: 1.25rem;
+}
+
+main {
+    text-align: center;
+    background-color: #80ced6;
+}
+
+.title-container {
+    padding: 3%;
+}
+
+h1 {
+    margin: 0;
+}
+
+.region-container {
+    background-color: #d5f4e6;
+    display: grid;
+    justify-content: center;
+    padding: 10% 20%;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(4, auto);
+    grid-row-gap: 10%;
+    column-gap: 1rem;
+}
+
+.region-tile {
+    background-color: #fefbd8;
+    border: 1px solid;
+    border-color: #618685;
+    border-radius: 20px;
+}
+
+.form-group {
+    display: inline-block;
+    padding: 3%;
+}
+
+.result-container {
+    background-color: #d5f4e6;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table td, table th {
+  border: 1px solid #618685;
+}
+
+table tr:first-child th {
+  border-top: 0;
+}
+table tr:last-child td {
+  border-bottom: 0;
+}
+table tr td:first-child,
+table tr th:first-child {
+  border-left: 0;
+}
+table tr td:last-child,
+table tr th:last-child {
+  border-right: 0;
+}
+
+footer
+{
+    text-align: center;
+    font-size: 0.75rem;
+}

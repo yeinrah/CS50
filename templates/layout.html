@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="ko-KR">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+
+        <link href="/static/styles.css" rel="stylesheet">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+        </style>
+
+        <title>전국 도서관 안내 : {% block title %}{% endblock %}</title>
+
+    </head>
+
+    <body>
+        <div class="navbar-container">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main>
+            {% block main %}{% endblock %}
+        </main>
+
+        <footer>
+            <p>모든 데이터는 <a href="https://www.data.go.kr/index.do">공공 데이터 포털</a>에서 제공받았습니다.</p>
+        </footer>
+
+    </body>
+
+</html>

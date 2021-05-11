@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <div class="title-container">
+        <h1>전국 도서관 안내</h1>
+    </div>
+    <div class="region-container">
+        {% for s in sido %}
+            <div class="region-tile">
+                <p><a href="/{{ s.시도명 }}">{{ s.시도명 }}</a></p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
