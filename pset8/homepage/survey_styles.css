@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+  text-align: center;
+  background: rgb(34,193,195);
+  background: linear-gradient(160deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  color: darkslategray;
+  font-family: 'Lobster', cursive, sans-serif;
+  margin: 5%;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 1em;
+  margin-bottom: 5%;
+}
+
+.privateinfo-label {
+  font-size: 1.5em;
+  margin: 5%;
+  display: block;
+}
+
+.privateinfo-input {
+  border: none;
+  border-radius: 0.25em;
+  width: 150px;
+}
+
+.dropdown {
+  font-size: 1.5em;
+  margin: 5%;
+}
+
+.color-q {
+  font-size: 1.5em;
+  margin: 5%;
+}
+
+.radio-label {
+  font-size: 1.5em;
+  display: block;
+  margin: 5%;
+}
+
+.fruit-q {
+  font-size: 1.5em;
+  margin: 5%;
+}
+
+.checkbox-label {
+  font-size: 1.5em;
+  display: block;
+  margin: 5%;
+}
+
+.comment-label {
+  font-size: 1.5em;
+}
+
+.commentbox {
+  justify-content: center;
+  margin: 5%;
+  width: 50%;
+  height: 50%;
+}
+
+.comment {
+  display: flex;
+  justify-content: center;
+}
+
+.submit {
+  width: 100px;
+  height: 30px;
+  border-radius: 0.25em;
+  background: white;
+  color: darkslategray;
+  font-family: 'Lobster', cursive, sans-serif;
+  margin: 5%;
+}
+
+.submitbtn {
+  display: flex;
+  justify-content: center;
+}

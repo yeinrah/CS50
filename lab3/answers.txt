@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: sort1's processing time increases the most when numbers increase
+
+sort2 uses: merge sort
+
+How do you know?: sort2 takes the least time to sort all kinds of numbers, including big numbers
+
+sort3 uses: selection sort
+
+How do you know?: sort3's time difference between sorted, reversed, random numbers is the smallest among three sorts

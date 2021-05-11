@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>State</th>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for asset in assets %}
+                <tr>
+                    <td>{{ asset["state"] }}</td>
+                    <td>{{ asset["symbol"] }}</td>
+                    <td>{{ asset["name"] }}</td>
+                    <td>{{ asset["shares"] }}</td>
+                    <td>{{ asset["price"] | usd }}</td>
+                    <td>{{ asset["time"] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

@@ -1,0 +1,4 @@
+1. Get an integer for height from user
+2. If user's input is not integer between 1~8, go back
+3. Iterate through 1 to height
+    On ith iteration, print i hashes and enter
